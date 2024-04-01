@@ -1,17 +1,21 @@
 header { 
-    background-color: aqua;
+    background-color: rgb(255, 175, 0);
     grid-column: 1 / 6;
     grid-row: 1;
     border: 3px solid;
 }
 main {
-    background-color: chartreuse;
+    background-color: rgb(219, 150, 0);
     grid-column: 1 / 2;
     grid-row: 2;
     border: 2px solid;
+    max-height: 2000px;
+    min-height: max-content;
+    width: 100%;
+    margin: 0;
 }
 aside {
-    background-color: darkblue;
+    background-color: rgb(255, 175, 0);
     grid-column: 2 / 6;
     grid-row: 2;
     border: 3px solid;
@@ -23,6 +27,10 @@ aside {
     grid-template-rows: 5em 31em;
     border: 0;
     padding: 0;
+    margin: 0;
+    grid-template-rows: 100px 100%;
+    max-width: 100%;
+    width: 100%;
 }
 body {
     background-color: black;
@@ -30,18 +38,16 @@ body {
 
 p {
     display: grid;
-    grid-template-rows: 7em;
+    grid-template-rows: 15em;
     font-family: sans-serif;
     font-style: italic;
+    overflow: auto;
+    border: solid;
 }
-li {
-    background-color: aqua;
-    padding: 10px;
+
+.accordion-body {
+    background-color: rgb(255, 175, 0);
 }
-/* li::after { 
-    display: block;
-    content: <<akniakniaknci>>;
-} */
-/* li::before {
-    content: <<kafnaenfoanakfn>;
-} */
+.accordion-button {
+    background-color: rgb(255, 175, 0);
+}
